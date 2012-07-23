@@ -23,12 +23,21 @@ How to install fusionfs:
 	6) Go to ./src/ffsnet/, run Makefile
 	7) Go to ./src, run Makefile
 
-How to use fusionfs:
+How to use fusionfs on servers:
 	1) `rm -rf fusion_root/*` to cleanup your scratch data
 	2) ./start_service to start the backup services
 	3) ./start to run fusionfs
 	4) ./stop to stop fusionfs
 	5) ./stop_service to stop all services
+
+How to use fusionfs on clusters:
+	0) Specify list of nodes on /src/zht/neighbor
+	1) ./cleanAll to `make clean` everything
+	2) ./compileAll to `make` everything
+	3) ./start_service_all to start services on all nodes
+	4) ./start_all to start fusionfs on all nodes
+	5) ./stop_all to stop all fusionfs on all nodes
+	6) ./stop_service_all to stop all services on all nodes
 
 How to test fusionfs with IOZone:
 	1) It's trivial to run IOZone on the local node
