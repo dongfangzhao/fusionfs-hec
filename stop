@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm /home/dzhao/fusion_root/tmp/*
+
+fusermount -u /home/dzhao/fusion_mount

@@ -1,0 +1,5 @@
+#!/bin/sh
+for i in 01 02 03 04 06 07 08 09 10 11 
+do
+	ssh hec-$i 'cd nfs/fusionFS; ./start; df -lh' 
+done
